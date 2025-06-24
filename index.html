@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Analfabetismo Digital</title>
+    <!-- Link para o arquivo CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <!-- Seção de seleção de nível -->
+        <div id="level-selection-screen" class="screen active">
+            <h1>Escolha seu Nível</h1>
+            <button class="level-button" data-level="easy">Fácil</button>
+            <button class="level-button" data-level="medium">Médio</button>
+            <button class="level-button" data-level="hard">Difícil</button>
+        </div>
+
+        <!-- Seção do quiz (perguntas) -->
+        <div id="quiz-screen" class="screen hidden">
+            <h2 id="question-text"></h2>
+            <div id="options-container" class="options-grid">
+                <!-- Opções de resposta serão inseridas aqui pelo JavaScript -->
+            </div>
+            <button id="next-button" class="action-button hidden">Próxima Pergunta</button>
+        </div>
+
+        <!-- Seção de resultados -->
+        <div id="results-screen" class="screen hidden">
+            <h1>Seu Resultado</h1>
+            <p id="score-text"></p>
+            <button id="restart-button" class="action-button">Reiniciar Quiz</button>
+        </div>
+    </div>
+
+    <!-- Link para o arquivo JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
